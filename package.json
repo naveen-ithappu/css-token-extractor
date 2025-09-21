@@ -1,0 +1,75 @@
+{
+  "name": "css-token-extractor",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "extract:slds": "ts-node examples/slds/index.ts",
+    "extract:carbon": "ts-node examples/carbon/index.ts",
+    "extract:stellar": "ts-node examples/stellar/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "publish:clean": "clean-publish"
+  },
+  "keywords": [
+    "css",
+    "design tokens",
+    "design-tokens",
+    "tokens",
+    "css variables",
+    "css custom properties",
+    "token extractor",
+    "bem",
+    "parser",
+    "design system",
+    "style dictionary",
+    "theming"
+  ],
+  "author": "Naveen Ithappu",
+  "license": "ISC",
+  "description": "Extract and analyze CSS design tokens and their component usage to audit and maintain design systems.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveen-ithappu/css-token-extractor.git"
+  },
+  "homepage": "https://github.com/naveen-ithappu/css-token-extractor#readme",
+  "bugs": {
+    "url": "https://github.com/naveen-ithappu/css-token-extractor/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "css-tree": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@carbon/styles": "^1.90.0",
+    "@stellar/design-system": "^3.1.5",
+    "@salesforce-ux/design-system":"^2.28.0",
+    "eslint": "^8.54.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0",
+    "clean-publish": "^4.3.0"
+  }
+}
