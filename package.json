@@ -1,6 +1,6 @@
 {
   "name": "css-token-extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -66,7 +66,7 @@
     "@typescript-eslint/parser": "^6.13.0",
     "@carbon/styles": "^1.90.0",
     "@stellar/design-system": "^3.1.5",
-    "@salesforce-ux/design-system":"^2.28.0",
+    "@salesforce-ux/design-system": "^2.28.0",
     "eslint": "^8.54.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.0",
