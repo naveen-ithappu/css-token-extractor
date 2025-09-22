@@ -47,10 +47,9 @@ import { CSSTokenExtractor } from 'css-token-extractor';
 
 const extractor = new CSSTokenExtractor({
   // Configure how components are detected and normalized
-  selectorPrefixes: ['slds-', 'cds--'],
+  selectorPrefixes: ['slds-'],
   // Order matters: longer separators first
   bemSeparators: ['__', '--'],
-  tokenPrefixes: ['slds-', 'sds-'],
   // Exclude utilities/state classes using string or regex strings
   excludeClasses: ['slds-var-', 'slds-m-', 'slds-is-', 'slds-has-', 'slds-r\\d']
 });

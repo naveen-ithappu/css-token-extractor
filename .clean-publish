@@ -4,30 +4,9 @@
     "README.md",
     "LICENSE"
   ],
-  "fields": {
-    "keep": [
-      "name",
-      "version",
-      "description",
-      "license",
-      "author",
-      "repository",
-      "bugs",
-      "homepage",
-      "keywords",
-      "main",
-      "types",
-      "exports",
-      "files",
-      "sideEffects",
-      "engines",
-      "dependencies",
-      "publishConfig"
-    ],
-    "remove": [
-      "scripts",
-      "devDependencies",
-      "packageManager"
-    ]
-  }
+  "fields": [
+    "scripts",
+    "devDependencies",
+    "packageManager"
+  ]
 }
